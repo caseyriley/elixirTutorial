@@ -39,3 +39,7 @@ defmodule Loop do
 end
 
 Loop.print_multiple_times("Hello", 10)
+
+#Enum.all?
+res = Enum.all?([1, 2, 3, 4], fn(s) -> rem(s,2) == 1 end)
+IO.puts(res)
